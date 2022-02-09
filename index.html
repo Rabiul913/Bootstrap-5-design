@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top py-2" style="background-color: white;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/image/logo2.png" width="100%" height="50px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="product_pages/mens_product.html">Mens Collections</a></li>
+              <li><a class="dropdown-item" href="product_pages/ladies_product.html">Ladies Collections</a></li>
+              <li><a class="dropdown-item" href="product_pages/kids_product.html">Kids Collections</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact</a>
+          </li>
+          
+        </ul>
+     
+        <form class="d-flex border-box" style="margin-right: 20px;">
+          <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+              <button class="btn btn-outline-success" type="button"><i class="fas fa-search"></i></button>
+            </span>
+          </div>
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button> -->
+        </form> 
+        <a class="btn btn-secondary signin" href="#" style="text-decoration: none;">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  
+  <div class="carousel-inner">
+    <div class="carousel-item zoom-in-out-box active">
+      <img src="assets/image/slider1.jpg" alt="Los Angeles" class="d-block"  style="width:100%; height: 630px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Third slide label</h2>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item zoom-in-out-box">
+      <img src="assets/image/slider2.jpg" alt="Chicago" class="d-block" style="width:100%; height: 630px;">
+      <div class="carousel-caption d-none d-md-block">
+       <h2>Third slide label</h2>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item zoom-in-out-box">
+      <img src="assets/image/slider3.jpg" alt="New York" class="d-block" style="width:100% ; height: 630px;">
+      <div class="carousel-caption d-none d-md-block">
+       <h2>Third slide label</h2>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  
+ 
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="content-wrapper mt-3">
+<section class="category pb-2" id="category">
+  <h2 class="text-center py-2 border-top border-bottom">Categories</h2>
+  <div class="container-fluid px-5">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="home" aria-selected="true">ALL</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="ladies-tab" data-bs-toggle="tab" data-bs-target="#ladies" type="button" role="tab" aria-controls="profile" aria-selected="false">Ladies</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="mens-tab" data-bs-toggle="tab" data-bs-target="#mens" type="button" role="tab" aria-controls="contact" aria-selected="false">Mens</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kids" type="button" role="tab" aria-controls="contact" aria-selected="false">Kids</button>
+            </li>
+          </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <figure class="snip0013">
+                        <img src="assets/image/products/ladies/beg.jpg" alt="sample33" style="height: 400px; width: 100%;"/>
+                        <div class="member-info-content">
+                          <h3>Ladies Collections</h3>       
+                        </div>
+                        <div>
+                          <a href="products/ladies_product.html"><i>See More</i></a>
+                        </div>			
+                      </figure>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <figure class="snip0013">
+                        <img src="assets/image/products/mens/sweater.jpg" alt="sample33" style="height: 400px; width: 100%;"/>
+                        <div class="member-info-content">
+                          <h3>Mens Collections</h3>
+                        </div>
+                        <div>
+                            <a href="products/mens_product.html"><i>See More</i></a>
+                        </div>			
+                      </figure>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <figure class="snip0013">
+                        <img src="assets/image/products/kids/image1.jpg" alt="sample33" style="height: 400px; width: 100%;"/>
+                        <div class="member-info-content">
+                          <h3>Kids Collections</h3>
+                        </div>
+                        <div>
+                            <a href="products/mens_product.html"><i>See More</i></a>
+                        </div>			
+                      </figure>
+                    </div>
+                  </div>
+              
+
+                </div>
+                <div class="tab-pane fade" id="ladies" role="tabpanel" aria-labelledby="ladies-tab">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <figure class="snip0013">
+                        <img src="assets/image/products/ladies/beg.jpg" alt="sample33" style="height: 400px; width: 100%;"/>
+                        <div class="member-info-content">
+                          <h3>Hand Begs</h3>       
+                        </div>
+                        <div>
+                          <a href="products/ladies_product.html"><i>See More</i></a>
+                        </div>			
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="mens" role="tabpanel" aria-labelledby="mens-tab">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <figure class="snip0013">
+                        <img src="assets/image/products/mens/sweater.jpg" alt="sample33" style="height: 400px; width: 100%;"/>
+                        <div class="member-info-content">
+                          <h3>Sweater for mens</h3>
+                        </div>
+                        <div>
+                            <a href="products/mens_product.html"><i>See More</i></a>
+                        </div>			
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="kids" role="tabpanel" aria-labelledby="kids-tab">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <figure class="snip0013">
+                        <img src="assets/image/products/kids/image1.jpg" alt="sample33" style="height: 400px; width: 100%;"/>
+                        <div class="member-info-content">
+                          <h3>Dress for mens</h3>
+                        </div>
+                        <div>
+                            <a href="products/mens_product.html"><i>See More</i></a>
+                        </div>			
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+            </div>
+  </div>
+                
+     
+</section>
+
+
+<section class="about pb-2" id="about">
+  <h2 class="text-center text-center py-2 border-top border-bottom">About</h2>
+<div  class="container-fluid px-5">
+  <div class="row">
+    <div class="col-lg-6 col-12">
+   <img src="assets/image/products/about.jpg" width="100%" height="490px" alt="">
+    </div>
+    <div class="col-lg-6 col-12 about-content">
+      <p>
+        Welcome to our Ecommerce, your number one source for all things. We're dedicated to giving you the very best of product, with a focus on Ecommerce service Founded in 2022 by Mysoftheaven, mysoftheaven has come a long way from its beginnings in a 60 feet, Mirpur, Dhaka... <br><a class="btn btn-primary" href="about_us.html">Read More</a>
+      </p>
+   </div>
+   </div>
+</div>
+</section>
+
+<section class="contact pb-2" id="contact">
+  <h2 class="text-center text-center py-2 border-top border-bottom">Contact</h2>
+<div  class="container-fluid px-5">
+  <div class="row">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+      <!-- Name input -->
+      <div class="mb-3">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+      </div>
+  
+      <!-- Email address input -->
+      <div class="mb-3">
+        <label class="form-label" for="emailAddress">Email Address</label>
+        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+      </div>
+  
+      <!-- Message input -->
+      <div class="mb-3">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+      </div>
+  
+      <!-- Form submissions success message -->
+      <div class="d-none" id="submitSuccessMessage">
+        <div class="text-center mb-3">Form submission successful!</div>
+      </div>
+  
+      <!-- Form submissions error message -->
+      <div class="d-none" id="submitErrorMessage">
+        <div class="text-center text-danger mb-3">Error sending message!</div>
+      </div>
+  
+      <!-- Form submit button -->
+      <div class="d-grid">
+        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+      </div>
+  
+    </form>
+   </div>
+</div>
+</section>
+
+
+
+</div>
+
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">Mysoftheaven</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+<script>
+  $(document).ready(function(){
+    $(".dropdown li.-collapse a").click(function(event){
+      $(".dropdown").collapse('hide');
+    });
+  });
+
+  $(".navbar-nav>li>a").on('click',function(){
+      $(".navbar-collapse").collapse('hide');
+    });
+</script>
+</body>
+
+</html>
+
+
